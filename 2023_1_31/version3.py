@@ -10,6 +10,7 @@ dictionary = {}
 consonant = ["b", "ch", "D", "gh", "H", "j", "l", "m", "n", "p", "q", "Q", "r", "S", "t", "v", "w", "y", "'"]
 for i in new_flie:
     split_list = i.split('|')  # breaking the left and right side part of each line
+    print(split_list)
     dictionary[split_list[0]] = split_list[1].strip()  # storing in as left side as key and right side as value
 
 for key, value in dictionary.items():
